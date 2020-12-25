@@ -7,7 +7,10 @@ this is class pproject that teacher provide to student to test their ability.
 *online shopping*
 
  this is my first built about online shopping app
- * [online shopping](/online shopping/homepage.html)
+ *project specification*
+ 
+ * [online shopping](/../homepage.html)
+ * [view product](/../productpage.html)
 
 ## 2
 *music player*
