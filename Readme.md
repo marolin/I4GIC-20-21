@@ -1,25 +1,25 @@
 *hello this is class I4-GIC 37th*
 
 # **project**
-this is cclass pproject that teacher provide to student to test their ability.
+this is class pproject that teacher provide to student to test their ability.
 
 ## 1
-**online shopping**
+*online shopping*
 
  this is my first built about online shopping app
- * [online shopping] (/online shopping/homepage.html)
+ * [online shopping](/online shopping/homepage.html)
 
 ## 2
-**music player**
+*music player*
  this is my test about mysic player.
  hope you enjoy it !
 
- **project specification**
+ *project specification*
  + Custom UI
  + Song cover and other details are displayed
  + Play and Pause
  + Switch between songs
 
- * [music player] (/music-player/index.html)
+ * [music player](/music-player/index.html)
 
 
