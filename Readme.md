@@ -8,9 +8,10 @@ this is class pproject that teacher provide to student to test their ability.
 
  this is my first built about online shopping app
  *project specification*
+ + custom UI
  
- * [online shopping](/../homepage.html)
- * [view product](/../productpage.html)
+ * [online-shopping](/online shopping/homepage.html)
+ * [view-product](/online shopping/productpage.html)
 
 ## 2
 *music player*
