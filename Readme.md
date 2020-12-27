@@ -9,8 +9,9 @@ this is class pproject that teacher provide to student to test their ability.
  this is my first built about online shopping app
  *project specification*
  + custom UI
+ + oder clothes
  
- * [online-shopping](/online shopping/homepage.html)
+ * [online-shopping](/online shopping/index.html)
  * [view-product](/online shopping/productpage.html)
 
 ## 2
@@ -26,4 +27,10 @@ this is class pproject that teacher provide to student to test their ability.
 
  * [music player](/music-player/index.html)
 
+## 3
+*gaming*
+this is the creative game that use javascript, css, and html.
 
+ + move key.
+ + custom UI
+ * [gaming play](/gaming/index.html)
