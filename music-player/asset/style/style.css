@@ -7,3 +7,100 @@
 html {
     font-size: 62.5%;
 }
+body{
+    font-family: 'poppins', 'Montserrat', sans-serif;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+}
+.container{
+    width: 30rem;
+}
+.heading{
+    color: brown;
+    text-align: center;
+    text-shadow: 2px 1px cornsilk;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.music-container{
+    background-color: sandybrown;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cover-box{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    bottom: 4rem;
+    width: 85%;
+}
+#cover{
+    border-radius: inherit;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#music-box{
+    width: 100%;
+}
+#music-info{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 2rem;
+}
+#title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#artist{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#progress-container{
+    height: 4px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 2rem 0 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#progress{
+    background-color: tomato;
+    width: 0%;
+    height: inherit;
+    border-radius: inherit;
+    transition: width 100ms ease-in;
+}
+#timer-bar{
+    display:flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+#control-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.btn{
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1rem;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    border-radius: 4rem;
+    color: azure;
+    transition: background 200ms linear, color 200ms linear;
+}
