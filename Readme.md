@@ -11,8 +11,8 @@ this is class pproject that teacher provide to student to test their ability.
  + custom UI
  + oder clothes
  
- * [online-shopping](/online shopping/index.html)
- * [view-product](/online shopping/productpage.html)
+ * [online-shopping](/online-shopping/index.html)
+ * [view-product](/online-shopping/productpage.html)
 
 ## 2
 *music player*
