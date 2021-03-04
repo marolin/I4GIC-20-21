@@ -2,10 +2,10 @@ const User = require('../models/users');
 const bcrypt = require("bcrypt");
 
 exports.signIn= (req,res) =>{
-    res.render('Sign In',{error:false});
+    res.render('signin',{error:false});
 }
 exports.signUp= (req,res) =>{
-    res.render('Sign Up');
+    res.render('signup');
 }
 
 exports.clothes=(req,res)=>{
@@ -22,7 +22,7 @@ exports.login = (req, res) => {
             res.redirect("/admin");
           } 
           else {
-            res.render("Sign In", {error: true, message: "Incorrect Passowrd"});
+            res.render("signin", {error: true, message: "Incorrect Passowrd"});
           }
         })
       }
@@ -57,7 +57,7 @@ exports.register = (req,res) =>{
           res.json({email:false});
       }).catch(err =>{
           console.log(err)
-          res.render('Sign Up',{message: "no existance account!"});
+          res.render('signup',{message: "no existance account!"});
       });
     }
     

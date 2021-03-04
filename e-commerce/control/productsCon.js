@@ -5,10 +5,10 @@ const fs = require('fs');
 exports.getAllProduct=async(req,res) => {
     await Product.find().then(result => {
         if(result){
-            res.render('Dashboard',{error:false,result:result});
+            res.render('dashboard',{error:false,result:result});
         }
         else{
-            res.render('Dashboard',{error:false,result:false});
+            res.render('dashboard',{error:false,result:false});
         }
     })
 }

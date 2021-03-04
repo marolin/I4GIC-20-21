@@ -10,13 +10,8 @@ const app= express();
 
 app.set('view engine','ejs');
 app.set('views', 'views');
-// let ejsOptions = {
-//     // delimiter: '?', Adding this to tell you do NOT use this like I've seen in other docs, does not work for Express 4
-//     async: true
-//   };
+
 app.use(bodyParser.urlencoded({entended:true}));
-
-
 
 app.use(express.static(path.join(__dirname,'publics')));
 app.use(fileUpload({
