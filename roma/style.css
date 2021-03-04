@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font: 1.6rem Helvetica;
+    height: 100vh;
+    margin: 0;
+}
+.grid-conntainer{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+}
+.header{
+    grid-area: header;
+    background-color: brown;
+    color:beige ;
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+    grid-area: main;
+    background-color: blue;
+}
+.footer{
+    grid-area: footer;
+}
+.product-rating{
+    margin-bottom: 1rem;
+}
+/*sidebar*/
+.brand button{
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: azure;
+    height: 100%;
+}
+.sidebar.open{
+    transform: translateX(0);
+}
