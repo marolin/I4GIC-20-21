@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+const express = require('express');
+const bodyParser = require('body-parser');
+const cookie = require('cookie-parser');
+const routes = require('./routes/routes');
+const path = require('path');
+const mongoose = require('mongoose');
+const fileUpload = require('express-fileupload');
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const app= express();
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+app.set('view engine','ejs');
+app.set('views', 'views');
+// let ejsOptions = {
+//     // delimiter: '?', Adding this to tell you do NOT use this like I've seen in other docs, does not work for Express 4
+//     async: true
+//   };
+app.use(bodyParser.urlencoded({entended:true}));
+
+
+
+app.use(express.static(path.join(__dirname,'publics')));
+app.use(fileUpload({
+    limits: { fileSize: 50 * 1024 * 1024 },
+  }));
+app.use(bodyParser.json());
+app.use(cookie());
+app.use(routes);
+
+mongoose.connect('mongodb+srv://user123:user123@cluster0.nlyev.mongodb.net/user?retryWrites=true&w=majority').then(
+    result=>{
+        console.log("DB is connected")
+    }
+).catch(err=>{
+    console.log(err)
+});
+app.listen(3000);
